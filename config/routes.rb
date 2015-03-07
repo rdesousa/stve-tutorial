@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+  root "pages#home"
+  get "lessons" => "pages#lessons" #creates lessons_path 
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
